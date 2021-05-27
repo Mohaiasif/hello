@@ -225,3 +225,61 @@
 		left:20%;
 	}
 }
+.code{
+	position: fixed;
+	top: 5%;
+	left: 10%;
+	width: 50px;
+	z-index: 5;
+	animation-name: Code;
+	animation-direction: alternate;
+	animation-duration: 50s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+}
+@keyframes Code{
+	0%{
+		left: 20%; top: 15%;
+ 	}
+	10%{
+		left: 40%; top: 25%;
+	}
+	15%{
+		left: 60%; top: 35%;
+	}
+	20%{
+		left: 80%; top: 45%;
+	}
+	30%{
+
+		left: 75%; top: 55%;
+		
+
+	}
+	40%{
+		left: 65%; top: 65%;
+		transform: scaleX(-1);
+	}
+	50%{
+		left: 45%; top: 75%;
+	}
+	60%{
+		left: 35%; top: 85%;
+	}
+	70%{
+		left: 25%; top: 75%;
+	}
+	80%{
+		left: 15%; top: 65%;
+		transform: scaleX(-1);
+	}
+	90%{
+		left: 10%; top: 55%;
+	}
+	100%{
+		left: 5%; top: 45%;
+
+	}
+
+}

@@ -1,0 +1,227 @@
+.banner{
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.banner h1{
+	position: absolute;
+    bottom: 48%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    left: 0;
+    opacity: 1;
+    font-size: 60px;
+    font-family: cursive;
+    letter-spacing: 1.4px;
+    transition: all 0.3s ease-in-out;
+}
+.banner::before {
+    content: "";
+    background: #2b25259c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+   
+   
+}
+.banner a img{
+    width: 30px;
+}
+.banner a{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation-name: arrowtop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+   animation-direction: alternate;
+   z-index: 2;
+
+}
+@keyframes arrowtop{
+	0%{
+		bottom: 30px;
+	}
+	
+	100%{
+		bottom:50px;
+	}
+
+}
+
+.zoom{
+	animation-name: Zoompic;
+	animation-direction: alternate;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+@keyframes Zoompic{
+	0%{
+		transform: scale(1);
+	}
+	
+	100%{
+		transform: scale(1.2);
+	}
+
+}
+.effect{
+	position: relative;
+	overflow: hidden;
+}
+.effect::before{
+	content: "";
+	background: #2b25259c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.topRight::after{
+	content: "";
+	right: 10px;
+    top: 0;
+    height: 0;
+    position: absolute;
+    border-right: 1px solid white;
+    transform: scaleY(0.95);
+    z-index: 2;
+    transition: all .3s ease-in-out;
+}
+.effect:hover .topRight::after{
+	height: 100%;
+}
+.topRight::before{
+	content: "";
+	position: absolute;
+    top: 10px;
+    right: 0;
+    width: 0;
+    z-index: 2;
+    border-top: 1px solid #ffffff;
+    transform: scaleX(0.96);
+    transition: all .3s ease-in-out;
+
+}
+.effect:hover .topRight::before{
+	width: 100%;
+}
+
+.leftBottom::after{
+	content: "";
+	left: 0;
+    bottom: 10px;
+    width: 0;
+    position: absolute;
+    border-bottom: 1px solid white;
+    transform: scaleX(0.96);
+    z-index: 2;	
+    transition: all .3s ease-in-out;
+
+}
+.effect:hover .leftBottom::after{
+	width: 100%;
+}
+
+.leftBottom::before{
+	content: "";
+	position: absolute;
+    bottom: 0 ;
+    left: 10px;
+    height: 0;
+    z-index: 2;
+    border-left: 1px solid #ffffff;
+    transform: scaleY(0.95);
+    transition: all .3s ease-in-out;
+
+}
+.effect:hover .leftBottom::before{
+	height: 100%;
+}
+.effect h1{
+	position: absolute;
+    bottom: 48%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    left: 0;
+    opacity: 0;
+    font-size: 30px;
+    font-family: cursive;
+    letter-spacing: 1.4px;
+    transition: all 0.3s ease-in-out;
+
+}
+.effect:hover h1{
+	opacity: 1;
+	bottom: 50%;
+	
+}
+.badge{
+	    position: absolute;
+	    right: 10px;
+	    top: 20px;
+	    color: black;
+
+	    z-index: 2;
+	    transform: rotate(45deg);
+}
+.badge::after{
+	content: "";
+	position: absolute;
+	width: 130px;
+	height: 30px;
+	background: white;
+	top: -5px;
+	right: -45px;
+	z-index: -1;
+	box-shadow: 0 0 6px currentColor;
+}
+/*RAOD SECTION*/
+.road{
+
+	overflow: hidden;
+	min-height: 160px;
+	text-align: right;
+	position: relative;
+}
+.road img{
+	    width: 150px;
+	    position: relative;
+	    margin: 5%;
+}
+.road-img{
+	    background-image: url(../images/sea.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation-name: Sea;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform: scaleX(1.5);
+
+}
+@keyframes Sea{
+	0%{
+		left: 0;
+	}
+	100%{
+		left:20%;
+	}
+}
